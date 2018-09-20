@@ -567,7 +567,6 @@ GOTO :EOF
 :BuildLib_GCC
 	IF NOT EXIST "!CMDVAR_DLLTOOL!" (
 		ECHO [WARNING] gcc dlltool not found. Skipping gcc lib build..
-		SET BUILD_ERRORLEVEL=1
 		GOTO :EOF
 	)
 
@@ -581,7 +580,6 @@ GOTO :EOF
 :BuildLib_BCC
 	IF NOT EXIST "!CMDVAR_IMPLIB!" (
 		ECHO [WARNING] bcc implib tool not found. Skipping bcc lib build..
-		SET BUILD_ERRORLEVEL=1
 		GOTO :EOF
 	)
 
